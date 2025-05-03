@@ -19,7 +19,7 @@ const PasswordScreen: React.FC<PasswordScreenProps> = ({ onAuthenticate }) => {
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   
-  const CORRECT_PASSWORD = "SAMPLE_PASSWORD";
+  const CORRECT_PASSWORD = "eh";
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

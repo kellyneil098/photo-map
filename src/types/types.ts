@@ -10,5 +10,6 @@ export interface LocationMarker {
     date?: string;
     city?: string;
     containsPeople?: string[];
+    found?: boolean; // Add this to track found status
   }
   

@@ -1,5 +1,5 @@
 // src/components/PhotoPopup/PhotoPopup.tsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
   Card, 
   CardMedia, 
@@ -11,7 +11,9 @@ import {
   Modal,
   Fade,
   useMediaQuery,
-  useTheme
+  useTheme,
+  Checkbox,
+  FormControlLabel
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
@@ -21,17 +23,13 @@ import { LocationMarker } from '../../types/types';
 interface PhotoPopupProps {
   marker: LocationMarker | null;
   onClose: () => void;
+  onMarkFound: (markerId: string, found: boolean) => void;
 }
 
-const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose }) => {
+const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose, onMarkFound }) => {
   const [expanded, setExpanded] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  
-  // Reset expanded state when marker changes
-  useEffect(() => {
-    setExpanded(false);
-  }, [marker?.id]);
 
   if (!marker) return null;
 
@@ -41,6 +39,10 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose }) => {
 
   const handleCollapse = () => {
     setExpanded(false);
+  };
+
+  const handleFoundChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    onMarkFound(marker.id, event.target.checked);
   };
 
   // Card content to reuse in both regular and expanded views
@@ -54,9 +56,29 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose }) => {
         sx={{ objectFit: "cover" }}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {marker.title}
-        </Typography>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 1 }}>
+          <Typography gutterBottom variant="h5" component="div" sx={{ mb: 0 }}>
+            {marker.title}
+          </Typography>
+          <FormControlLabel
+            control={
+              <Checkbox 
+                checked={!!marker.found} 
+                onChange={handleFoundChange}
+                color="success"
+              />
+            }
+            label="Found it!"
+            sx={{ 
+              ml: 0, 
+              '& .MuiFormControlLabel-label': { 
+                fontSize: '0.875rem',
+                fontWeight: 'bold'
+              } 
+            }}
+          />
+        </Box>
+        
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
           {marker.description}
         </Typography>
@@ -103,7 +125,7 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose }) => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          p: 2 // Add padding to ensure it's not flush against screen edges
+          p: 2
         }}
       >
         <Fade in={expanded}>
@@ -146,19 +168,19 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose }) => {
     );
   }
 
-  // Regular card - position differently based on screen size
+  // Regular card in the corner
   return (
     <Card sx={{ 
       position: 'absolute', 
       bottom: isMobile ? 10 : 20, 
       right: isMobile ? 10 : 20,
-      left: isMobile ? 10 : 'auto', // On mobile, stretch from left to right edge
+      left: isMobile ? 10 : 'auto',
       zIndex: 1000, 
       maxWidth: isMobile ? '100%' : 400,
-      width: isMobile ? 'calc(100% - 20px)' : 400, // Adjust width for mobile
+      width: isMobile ? 'calc(100% - 20px)' : 400,
       boxShadow: 3,
-      maxHeight: isMobile ? 'calc(50vh - 20px)' : 'auto', // Limit height on mobile
-      overflow: 'auto' // Allow scrolling if content is too tall
+      maxHeight: isMobile ? 'calc(50vh - 20px)' : 'auto',
+      overflow: 'auto'
     }}>
       {cardContent}
       <IconButton 
