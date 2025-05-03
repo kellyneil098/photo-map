@@ -26,6 +26,7 @@ const MapView: React.FC<MapViewProps> = ({ markers, onMarkerClick, selectedMarke
       maxZoom={18} // Limit maximum zoom
       scrollWheelZoom={true} // Enable scroll wheel zoom
       doubleClickZoom={true} // Enable double click zoom
+      worldCopyJump={true} // Enable world copy jump to fix marker visibility
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
