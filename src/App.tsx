@@ -1,24 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
+// src/App.tsx
+import React, { useState } from 'react';
 import './App.css';
+import MapView from './components/Map/MapView';
+import PhotoPopup from './components/PhotoPopup/PhotoPopup';
+import PasswordScreen from './components/Auth/PasswordScreen';
+import { locationMarkers } from './data/locations';
+import { LocationMarker } from './types/types';
 
 function App() {
+  const [selectedMarker, setSelectedMarker] = useState<LocationMarker | null>(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const handleMarkerClick = (marker: LocationMarker) => {
+    setSelectedMarker(marker);
+  };
+
+  const handleClosePopup = () => {
+    setSelectedMarker(null);
+  };
+
+  const handleAuthentication = () => {
+    setIsAuthenticated(true);
+  };
+
+  // Show password screen if not authenticated
+  if (!isAuthenticated) {
+    return <PasswordScreen onAuthenticate={handleAuthentication} />;
+  }
+
+  // Show map if authenticated
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MapView 
+        markers={locationMarkers} 
+        onMarkerClick={handleMarkerClick}
+        selectedMarkerId={selectedMarker?.id}
+      />
+      <PhotoPopup 
+        marker={selectedMarker} 
+        onClose={handleClosePopup} 
+      />
     </div>
   );
 }

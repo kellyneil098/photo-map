@@ -1,38 +1,41 @@
+/* src/App.css */
 .App {
-  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Prevent scrollbars on the main container */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Fix for Leaflet popups */
+.leaflet-popup-content-wrapper {
+  max-width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.leaflet-popup-content {
+  margin: 8px 12px;
+  line-height: 1.4;
 }
 
-.App-link {
-  color: #61dafb;
+.leaflet-popup-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.leaflet-popup-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Make sure controls don't get cut off */
+.leaflet-control-container .leaflet-top,
+.leaflet-control-container .leaflet-bottom {
+  z-index: 999;
 }
