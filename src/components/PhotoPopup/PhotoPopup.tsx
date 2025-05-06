@@ -45,7 +45,6 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose, onMarkFound })
     onMarkFound(marker.id, event.target.checked);
   };
 
-  // Card content to reuse in both regular and expanded views
   const cardContent = (
     <>
       <CardMedia
@@ -56,10 +55,28 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose, onMarkFound })
         sx={{ objectFit: "cover" }}
       />
       <CardContent>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 1 }}>
-          <Typography gutterBottom variant="h5" component="div" sx={{ mb: 0 }}>
+        {/* Improved layout for title and checkbox */}
+        <Box sx={{ 
+          display: 'flex', 
+          flexDirection: { xs: 'column', sm: 'row' }, 
+          justifyContent: 'space-between',
+          alignItems: { xs: 'flex-start', sm: 'center' },
+          mb: 1
+        }}>
+          <Typography 
+            gutterBottom 
+            variant="h5" 
+            component="div" 
+            sx={{ 
+              mb: { xs: 1, sm: 0 },
+              mr: 2,
+              flex: '1 1 auto',
+              overflowWrap: 'break-word'
+            }}
+          >
             {marker.title}
           </Typography>
+          
           <FormControlLabel
             control={
               <Checkbox 
@@ -68,9 +85,11 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose, onMarkFound })
                 color="success"
               />
             }
-            label="找到了!"
+            label="Found it!"
             sx={{ 
               ml: 0, 
+              flex: '0 0 auto', // Prevent shrinking
+              whiteSpace: 'nowrap', // Keep text on one line
               '& .MuiFormControlLabel-label': { 
                 fontSize: '0.875rem',
                 fontWeight: 'bold'
@@ -83,9 +102,10 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose, onMarkFound })
           {marker.description}
         </Typography>
         
+        {/* Rest of the content remains the same */}
         {marker.city && (
           <Typography variant="body2" color="text.secondary">
-            <strong>城市:</strong> {marker.city}
+            <strong>Location:</strong> {marker.city}
           </Typography>
         )}
         
