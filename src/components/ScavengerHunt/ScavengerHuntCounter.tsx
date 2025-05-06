@@ -52,7 +52,7 @@ const ScavengerHuntCounter: React.FC<ScavengerHuntCounterProps> = ({ markers }) 
             {foundMarkers}/{totalMarkers}
           </Box>
           <Box component="span" sx={{ ml: 1, fontSize: '0.9rem', color: 'text.secondary' }}>
-            pictures found
+            照片找到
           </Box>
         </Typography>
       </Paper>
@@ -69,7 +69,7 @@ const ScavengerHuntCounter: React.FC<ScavengerHuntCounterProps> = ({ markers }) 
           variant="filled"
           sx={{ width: '100%' }}
         >
-          Congratulations! You've found all the pictures!
+          恭喜你！你找到了所有的照片。母亲节快乐！我爱你，希望以后会有更多照片可以加到地图里！
         </Alert>
       </Snackbar>
     </>

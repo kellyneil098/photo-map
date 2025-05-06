@@ -30,7 +30,7 @@ const PasswordScreen: React.FC<PasswordScreenProps> = ({ onAuthenticate }) => {
       onAuthenticate();
     } else {
       setError(true);
-      setErrorMessage('Password incorrect');
+      setErrorMessage('密码不正确');
     }
   };
   
@@ -49,17 +49,17 @@ const PasswordScreen: React.FC<PasswordScreenProps> = ({ onAuthenticate }) => {
         <Box sx={{ mb: 3, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <LockIcon fontSize="large" color="primary" sx={{ mb: 1 }} />
           <Typography variant="h5" component="h1" gutterBottom>
-            Photo Map Access
+            母亲节快乐！
           </Typography>
           <Typography variant="body1" color="text.secondary" align="center">
-            Please enter the password to view the photo map
+            请输入密码进入您的地图
           </Typography>
         </Box>
         
         <Box component="form" onSubmit={handleSubmit} sx={{ width: '100%' }}>
           <TextField
             fullWidth
-            label="Password"
+            label="密码"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -78,7 +78,7 @@ const PasswordScreen: React.FC<PasswordScreenProps> = ({ onAuthenticate }) => {
             size="large"
             sx={{ mt: 2 }}
           >
-            Access Map
+            进入地图
           </Button>
         </Box>
       </Paper>

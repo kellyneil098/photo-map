@@ -68,7 +68,7 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose, onMarkFound })
                 color="success"
               />
             }
-            label="Found it!"
+            label="找到了!"
             sx={{ 
               ml: 0, 
               '& .MuiFormControlLabel-label': { 
@@ -85,7 +85,7 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose, onMarkFound })
         
         {marker.city && (
           <Typography variant="body2" color="text.secondary">
-            <strong>Location:</strong> {marker.city}
+            <strong>城市:</strong> {marker.city}
           </Typography>
         )}
         
