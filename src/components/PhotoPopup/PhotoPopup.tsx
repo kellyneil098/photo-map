@@ -85,7 +85,7 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose, onMarkFound })
                 color="success"
               />
             }
-            label="Found it!"
+            label="找到了!"
             sx={{ 
               ml: 0, 
               flex: '0 0 auto', // Prevent shrinking
