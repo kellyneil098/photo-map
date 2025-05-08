@@ -52,7 +52,7 @@ const PhotoPopup: React.FC<PhotoPopupProps> = ({ marker, onClose, onMarkFound })
         height={expanded ? "400" : "250"}
         image={marker.imageUrl}
         alt={marker.title}
-        sx={{ objectFit: "cover" }}
+        sx={{ objectFit: "contain" }}
       />
       <CardContent>
         {/* Improved layout for title and checkbox */}
