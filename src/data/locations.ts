@@ -7,7 +7,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [41.4036, 2.1744],
     title: "Sagrada Familia",
     description: "著名建筑家高迪在巴塞罗那城设计的大教堂。",
-    imageUrl: "/images/barcelona-sagrada.JPG",
+    imageUrl: "./images/barcelona-sagrada.JPG",
     city: "Barcelona"
   },
   {
@@ -15,7 +15,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [35.4329, -82.2505],
     title: "Chimney Rock State Park",
     description: "北卡西部的公园。",
-    imageUrl: "/images/chimney-rock-bridge.png",
+    imageUrl: "./images/chimney-rock-bridge.png",
     city: "Chimney Rock"
   },
   {
@@ -23,7 +23,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [38.8899, -77.0091],
     title: "Capitol Building",
     description: "美国首都的国会大厦。",
-    imageUrl: "/images/dc-capitol-building.PNG",
+    imageUrl: "./images/dc-capitol-building.PNG",
     city: "Washington DC"
   },
   {
@@ -31,7 +31,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [36.0082, -78.9132],
     title: "Duke East Campus",
     description: "杜卡大学东校院，大四回中国以前照的相。",
-    imageUrl: "/images/durham-duke-east-campus.png",
+    imageUrl: "./images/durham-duke-east-campus.png",
     city: "Durham"
   },
   {
@@ -39,7 +39,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [35.9991174,-78.9367734],
     title: "Duke Pitchforks Music",
     description: "杜克大学西校院宿舍附近的音乐练习室。",
-    imageUrl: "/images/durham-duke-pitchforks-music.png",
+    imageUrl: "./images/durham-duke-pitchforks-music.png",
     city: "Durham"
   },
   {
@@ -47,7 +47,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [35.9993631,-78.9375388],
     title: "Duke Pitchforks",
     description: "杜克西校院食堂外面的楼梯。",
-    imageUrl: "/images/durham-duke-pitchforks.png",
+    imageUrl: "./images/durham-duke-pitchforks.png",
     city: "Durham"
   },
   {
@@ -55,7 +55,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [37.1742676,-3.589876],
     title: "Alhambra Road",
     description: "前往格拉纳达著名的阿尔罕布拉宫殿的路。",
-    imageUrl: "/images/granada-alhambra-road.jpg",
+    imageUrl: "./images/granada-alhambra-road.jpg",
     city: "Granada"
   },
   {
@@ -63,7 +63,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [37.1764399,-3.5881639],
     title: "Alhambra View",
     description: "阿尔罕布拉宫殿看到的美景。",
-    imageUrl: "/images/granada-alhambra-view.JPG",
+    imageUrl: "./images/granada-alhambra-view.JPG",
     city: "Granada"
   },
   {
@@ -71,7 +71,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [30.238141,120.1464156],
     title: "Haagen Daz",
     description: "杭州我和妈妈一起去吃的三球哈根达斯店。",
-    imageUrl: "/images/hangzhou-haagen-daz.png",
+    imageUrl: "./images/hangzhou-haagen-daz.png",
     city: "Hangzhou"
   },
   {
@@ -79,7 +79,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [30.2424, 120.0958],
     title: "Lingyin Temple",
     description: "杭州灵隐寺。",
-    imageUrl: "/images/hangzhou-lingyinsi.png",
+    imageUrl: "./images/hangzhou-lingyinsi.png",
     city: "Hangzhou"
   },
   {
@@ -87,7 +87,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [30.2590, 120.1490],
     title: "West Lake",
     description: "西湖美景，三月天",
-    imageUrl: "/images/hangzhou-xihu.png",
+    imageUrl: "./images/hangzhou-xihu.png",
     city: "Hangzhou"
   },
   {
@@ -95,7 +95,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [22.2937631,114.1679276],
     title: "Victoria Harbour",
     description: "大四和妈妈去香港旅游。",
-    imageUrl: "/images/hong-kong-victoria-bay.png",
+    imageUrl: "./images/hong-kong-victoria-bay.png",
     city: "Hong Kong"
   },
   {
@@ -103,7 +103,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [22.2759, 114.1455],
     title: "Victoria Peak",
     description: "和妈妈一起爬香港的维多利亚峰。",
-    imageUrl: "/images/hong-kong-victoria-peak.png",
+    imageUrl: "./images/hong-kong-victoria-peak.png",
     city: "Hong Kong"
   },
   {
@@ -111,7 +111,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [31.3875, 120.9470],
     title: "DKU Graduation",
     description: "昆山杜克2023年毕业典礼。",
-    imageUrl: "/images/kunshan-dku-graduation.png",
+    imageUrl: "./images/kunshan-dku-graduation.png",
     city: "Kunshan"
   },
   {
@@ -119,7 +119,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [40.417955,-3.7168869],
     title: "Royal Garden",
     description: "2024年和全家去马德里的皇家花园。",
-    imageUrl: "/images/madrid-royal-garden.jpg",
+    imageUrl: "./images/madrid-royal-garden.jpg",
     city: "Madrid"
   },
   {
@@ -127,7 +127,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [40.4180, -3.7144],
     title: "Royal Palace",
     description: "马德里皇宫的美景。",
-    imageUrl: "/images/madrid-royal-palace.jpg",
+    imageUrl: "./images/madrid-royal-palace.jpg",
     city: "Madrid"
   },
   {
@@ -135,7 +135,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [40.7356669,-73.9925903],
     title: "New York Home",
     description: "2024年在纽约第一次买房子！",
-    imageUrl: "/images/nyc-apartment-home.png",
+    imageUrl: "./images/nyc-apartment-home.png",
     city: "NYC"
   },
   {
@@ -143,7 +143,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [40.7425, -74.0061],
     title: "Chelsea Market",
     description: "纽约哈德森和旁边的小商场",
-    imageUrl: "/images/nyc-chelsea-market.png",
+    imageUrl: "./images/nyc-chelsea-market.png",
     city: "NYC"
   },
   {
@@ -151,7 +151,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [40.7538, -73.9984],
     title: "The Edge",
     description: "纽约最新的观景台。",
-    imageUrl: "/images/nyc-edge.jpg",
+    imageUrl: "./images/nyc-edge.jpg",
     city: "NYC"
   },
   {
@@ -159,7 +159,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [40.7394044,-73.9877419],
     title: "Friends Experience",
     description: "和妈妈一起参观朋友电视剧的博物馆！",
-    imageUrl: "/images/nyc-friends-experience.JPG",
+    imageUrl: "./images/nyc-friends-experience.JPG",
     city: "NYC"
   },
   {
@@ -167,7 +167,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [40.7794, -73.9632],
     title: "Metropolitan Museum",
     description: "和妈妈一起去纽约大都会艺术博物馆",
-    imageUrl: "/images/nyc-met-museum.JPG",
+    imageUrl: "./images/nyc-met-museum.JPG",
     city: "NYC"
   },
   {
@@ -175,7 +175,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [40.7614, -73.9502],
     title: "Roosevelt Island",
     description: "刚到纽约被雨淋湿以前的美好时光。",
-    imageUrl: "/images/nyc-roosevelt-island.png",
+    imageUrl: "./images/nyc-roosevelt-island.png",
     city: "NYC"
   },
   {
@@ -183,7 +183,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [40.7538, -74.0022],
     title: "The Shed",
     description: "能不能推得动？纽约的移动大楼",
-    imageUrl: "/images/nyc-vessel-shed.JPG",
+    imageUrl: "./images/nyc-vessel-shed.JPG",
     city: "NYC"
   },
   {
@@ -191,7 +191,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [35.9578539,120.2450017],
     title: "White Sail",
     description: "青岛金沙滩的大白帆！",
-    imageUrl: "/images/qingdao-baifan.JPG",
+    imageUrl: "./images/qingdao-baifan.JPG",
     city: "Qingdao"
   },
   {
@@ -199,7 +199,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [35.9554903,120.2386469],
     title: "Concert Hall",
     description: "美丽的金沙滩影月亭",
-    imageUrl: "/images/qingdao-beach-concert-hall.JPG",
+    imageUrl: "./images/qingdao-beach-concert-hall.JPG",
     city: "Qingdao"
   },
   {
@@ -207,7 +207,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6298915,-122.3512135],
     title: "Seattle Vacation",
     description: "2025果果到西雅图和妈妈，姥姥，爷爷碰头",
-    imageUrl: "/images/seattle-airbnb-inside.jpg",
+    imageUrl: "./images/seattle-airbnb-inside.jpg",
     city: "Seattle"
   },
   {
@@ -215,7 +215,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6296432,-122.3497501],
     title: "Seattle Airbnb Views",
     description: "西雅图房子的美景。",
-    imageUrl: "/images/seattle-airbnb-outside.jpg",
+    imageUrl: "./images/seattle-airbnb-outside.jpg",
     city: "Seattle"
   },
   {
@@ -223,7 +223,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6297609,-122.3486957],
     title: "Seattle Airbnb",
     description: "西雅图旅游的家",
-    imageUrl: "/images/seattle-airbnb.png",
+    imageUrl: "./images/seattle-airbnb.png",
     city: "Seattle"
   },
   {
@@ -231,7 +231,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6202047,-122.3504763],
     title: "Chihuly Garden and Glass",
     description: "奇胡利的玻璃博物馆",
-    imageUrl: "/images/seattle-chihully-2.png",
+    imageUrl: "./images/seattle-chihully-2.png",
     city: "Seattle"
   },
   {
@@ -239,7 +239,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6205, -122.3493],
     title: "Chihuly Glass Hall",
     description: "奇胡利玻璃博物馆的主要景点，玻璃大厅。",
-    imageUrl: "/images/seattle-chihully-glass-hall.jpg",
+    imageUrl: "./images/seattle-chihully-glass-hall.jpg",
     city: "Seattle"
   },
   {
@@ -247,7 +247,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6210272,-122.3500569],
     title: "Chihuly Museum",
     description: "奇胡利玻璃博物馆",
-    imageUrl: "/images/seattle-chihully-museum.jpg",
+    imageUrl: "./images/seattle-chihully-museum.jpg",
     city: "Seattle"
   },
   {
@@ -255,7 +255,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6205258,-122.351068],
     title: "Chihuly Garden and Glass",
     description: "奇胡利玻璃博物馆",
-    imageUrl: "/images/seattle-chihuly.png",
+    imageUrl: "./images/seattle-chihuly.png",
     city: "Seattle"
   },
   {
@@ -263,7 +263,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6275704, -122.3395226],
     title: "Lake Union",
     description: "西雅图的联合湖",
-    imageUrl: "/images/seattle-lake-union.jpg",
+    imageUrl: "./images/seattle-lake-union.jpg",
     city: "Seattle"
   },
   {
@@ -271,7 +271,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [46.8523, -121.7603],
     title: "Mt Rainier",
     description: "我和妈妈2021年爬过雷尼尔雪山。",
-    imageUrl: "/images/seattle-mt-rainier.png",
+    imageUrl: "./images/seattle-mt-rainier.png",
     city: "Seattle"
   },
   {
@@ -279,7 +279,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6093886,-122.3411803],
     title: "Pike Place Market",
     description: "西雅图的派克市场充满了艺术品。",
-    imageUrl: "/images/seattle-pike-place-downstairs.jpg",
+    imageUrl: "./images/seattle-pike-place-downstairs.jpg",
     city: "Seattle"
   },
   {
@@ -287,7 +287,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6092442,-122.3428555],
     title: "Pike Place Market",
     description: "西雅图派克市场的标志是一个小猪！",
-    imageUrl: "/images/seattle-pike-place-outdoor.png",
+    imageUrl: "./images/seattle-pike-place-outdoor.png",
     city: "Seattle"
   },
   {
@@ -295,7 +295,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6107569,-122.3432738],
     title: "Pike Place Market Seafood",
     description: "派克市场附近和妈妈，姥姥，爷爷吃的海鲜汤。",
-    imageUrl: "/images/seattle-pike-place-restaurant.png",
+    imageUrl: "./images/seattle-pike-place-restaurant.png",
     city: "Seattle"
   },
   {
@@ -303,7 +303,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6018233,-122.3368536],
     title: "Seattle Waterside Views",
     description: "派克市场的城市美景。",
-    imageUrl: "/images/seattle-pike-place-skyline.jpg",
+    imageUrl: "./images/seattle-pike-place-skyline.jpg",
     city: "Seattle"
   },
   {
@@ -311,7 +311,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6170941,-122.3563036],
     title: "Sculpture Park",
     description: "西雅图靠水的雕塑公园。",
-    imageUrl: "/images/seattle-sculture-park-2.png",
+    imageUrl: "./images/seattle-sculture-park-2.png",
     city: "Seattle"
   },
   {
@@ -319,7 +319,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6166, -122.3553],
     title: "Sculpture Park",
     description: "西雅图雕塑公园离太空针不太远。",
-    imageUrl: "/images/seattle-sculture-park.png",
+    imageUrl: "./images/seattle-sculture-park.png",
     city: "Seattle"
   },
   {
@@ -327,7 +327,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6214991,-122.3477106],
     title: "The Space Needle",
     description: "从这里可以看见西雅图的城市标志，太空针！",
-    imageUrl: "/images/seattle-space-needle.jpg",
+    imageUrl: "./images/seattle-space-needle.jpg",
     city: "Seattle"
   },
   {
@@ -335,7 +335,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6586553,-122.3055554],
     title: "U Washington Cherry Blossoms",
     description: "华盛顿导学的樱花树。",
-    imageUrl: "/images/seattle-uwash-cherry-2.JPG",
+    imageUrl: "./images/seattle-uwash-cherry-2.JPG",
     city: "Seattle"
   },
   {
@@ -343,7 +343,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6566989,-122.3080666],
     title: "U Washington Cherry Blossoms",
     description: "华盛顿大学的樱花树可能比杜克花园还要多！",
-    imageUrl: "/images/seattle-uwash-cherry.JPG",
+    imageUrl: "./images/seattle-uwash-cherry.JPG",
     city: "Seattle"
   },
   {
@@ -351,7 +351,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [47.6553, -122.3035],
     title: "University of Washington",
     description: "华盛顿大学的标志是一个哈士奇狗",
-    imageUrl: "/images/seattle-uwash.JPG",
+    imageUrl: "./images/seattle-uwash.JPG",
     city: "Seattle"
   },
   {
@@ -359,7 +359,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [37.3857, -5.9938],
     title: "Cathedral",
     description: "塞尔维亚城市中央的大教堂。",
-    imageUrl: "/images/seville-cathedral.jpg",
+    imageUrl: "./images/seville-cathedral.jpg",
     city: "Seville"
   },
   {
@@ -367,7 +367,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [37.3765, -5.9874],
     title: "Seville Gardens",
     description: "塞尔维亚整整齐齐的花园。",
-    imageUrl: "/images/seville-garden.JPG",
+    imageUrl: "./images/seville-garden.JPG",
     city: "Seville"
   },
   {
@@ -375,7 +375,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [31.324224,120.6273951],
     title: "Suzhou Gardens",
     description: "苏州的园林体现了人造的自然风光",
-    imageUrl: "/images/suzhou-baomoyuan.png",
+    imageUrl: "./images/suzhou-baomoyuan.png",
     city: "Suzhou"
   },
   {
@@ -383,7 +383,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [31.3202005,120.6238243],
     title: "Suzhou Gardens",
     description: "2023年毕业以前，我们去苏州旅游",
-    imageUrl: "/images/suzhou-garden.png",
+    imageUrl: "./images/suzhou-garden.png",
     city: "Suzhou"
   },
   {
@@ -391,7 +391,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [38.4044354,-78.7245145],
     title: "Massanutten Ski Vacation",
     description: "弗吉尼亚州居然还可以滑雪？",
-    imageUrl: "/images/virginia-massanuten-resort.png",
+    imageUrl: "./images/virginia-massanuten-resort.png",
     city: "Virginia"
   },
   {
@@ -399,7 +399,7 @@ export const locationMarkers: LocationMarker[] = [
     position: [36.9058402,118.3847983],
     title: "Visiting Home for Chinese New Year",
     description: "春节到淄博回家过年！",
-    imageUrl: "/images/zibo-xujiacun.png",
+    imageUrl: "./images/zibo-xujiacun.png",
     city: "Zibo"
   }
 ];
