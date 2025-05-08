@@ -19,7 +19,8 @@ const PasswordScreen: React.FC<PasswordScreenProps> = ({ onAuthenticate }) => {
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   
-  const CORRECT_PASSWORD = "eh";
+  // Yeah ik this is insecure it's just for fun
+  const CORRECT_PASSWORD = "muqinjiekuaile";
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
